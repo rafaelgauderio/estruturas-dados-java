@@ -70,6 +70,6 @@ public class Aluno {
                 ", matrícula=" + matricula +
                 ", sexo=" + sexo +
                 ", idade=" + idade +
-                "}";
+                "}\n";
     }
 }

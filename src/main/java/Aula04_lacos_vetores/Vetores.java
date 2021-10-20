@@ -2,6 +2,10 @@ package Aula04_lacos_vetores;
 
 import Aula03_github.Aluno;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Vetores {
 
     public static void main(String [] args) {
@@ -55,6 +59,11 @@ public class Vetores {
                 System.out.println("Aluno MENOR de 21 anos. Não pode trabalhar como monitor.\n");
             }
         }
+
+
+
+
+
 
 
     }
