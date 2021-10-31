@@ -37,12 +37,21 @@ public class Ponto {
         return (double) Math.sqrt(dx*dx + dy*dy);
     }
 
-    public void soma(Ponto p) {
+    public Ponto soma(Ponto p) {
 
-        x = x + p.getX();
-        y = y + p.getY();
+        x = p.getX() + x;
+        y = p.getY() + y;
+        Ponto somaPontos = new Ponto(x,y);
+        return somaPontos;
 
     }
+
+    public void subtracao(Ponto p) {
+        x = this.x - (p.getX());
+        y= this.y - (p.getY());
+
+    }
+
 
     @Override
     public String toString() {

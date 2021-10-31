@@ -44,7 +44,7 @@ public class Principal {
 
 
 
-        //SaLvando o valor real em uma fração em arquivo
+        //Salvando o valor real em uma fração em arquivo
         ManipuladorDeArquivos mp = new ManipuladorDeArquivos();
         File arquivo = mp.inicializa();
         //convertendo o double para String e escrevendo no arquivo
@@ -63,6 +63,8 @@ public class Principal {
 
         System.out.println("\n--Lendo a partir do arquivo--");
         mp.leia(arquivo);
+
+
 
     }
 
