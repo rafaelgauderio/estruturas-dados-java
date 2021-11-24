@@ -140,12 +140,14 @@ public class ManipuladorDeArquivos {
                 System.out.println("Ponto2\nCoordenada X : " + ponto2.getX());
                 System.out.println("Coordenada Y: " + ponto2.getY());
                 System.out.println("Distâncias entre os pontos: " + String.format("%.2f",ponto1.distancia(ponto2)));
+               // Ponto ponto3 = new Ponto(ponto1.getX(),ponto1.getY());
                 ponto1.soma(ponto2);
                 System.out.println("Soma dos pontos: " +ponto1);
+                //ponto3.subtracao(ponto2);
                 ponto1.subtracao(ponto2);
-                ponto1.subtracao(ponto2);
-                System.out.println("Subtracão dos pontos: " +ponto1);
-
+                //ponto1.subtracao(ponto2);
+                //System.out.println("Subtracão dos pontos: " +ponto3);
+                //System.out.println("Subtracão dos pontos: " +ponto1);
 
             }
 
@@ -159,7 +161,6 @@ public class ManipuladorDeArquivos {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-
 
     }
 
