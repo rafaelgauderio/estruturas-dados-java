@@ -6,7 +6,7 @@ public class Program {
 
         //Fila não é um estrutura de dados é um Tipo abstrato de dados.
         // Podemos ter uma fila de ListaLigada, de vetores
-        //FIFO = first in, fisrt out
+        //FIFO = first in, first out
         Queue queue = new Queue();
 
         queue.add("Brazil");
@@ -16,7 +16,7 @@ public class Program {
         queue.add("Spain");
         queue.add("Norway");
 
-        //Sempre remove o que entrou por primeiro na fila e adiciona no final da fila
+        //Sempre remove o que entrou por ultimo na fila e adiciona no final da fila
         System.out.println("First Element of queue: " + queue.getElement());
         queue.remove();
         System.out.println("New First Element of queue: " + queue.getElement());

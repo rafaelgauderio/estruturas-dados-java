@@ -19,8 +19,8 @@ public class Program {
         stack.add("Norway");
 
 
-        //Sempre remove o que entrou por ultimo na fila e em cima da pilha
-        //ou seja remove o primeiro elemento, e adiciona sempre no inicio;
+        //Sempre remove o que entrou por ultimo na pilha e em cima da pilha
+        //ou seja remove sempre o elemento no topo da pilha e adiciona no topo da pilha;
         System.out.println("First Element of stack: " + stack.getElement());
         stack.remove();
         System.out.println("New First Element of stack: " + stack.getElement());
