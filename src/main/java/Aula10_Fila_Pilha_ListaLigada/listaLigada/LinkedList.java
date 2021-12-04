@@ -75,6 +75,20 @@ public class LinkedList {
 
     }
 
+    public void addBegin(String newValue) {
+        Element newElement = new Element(newValue);
+        if(this.first==null && this.last==null) {//caso da lista vazia
+            this.first= newElement;
+            this.last=newElement;
+        } else {
+            newElement.setNext(this.first);
+            this.first=newElement;
+
+    }
+        this.size++;
+
+    }
+
     public void remove(String SearchValue){
         Element previus = null;
         Element actual = this.first;
