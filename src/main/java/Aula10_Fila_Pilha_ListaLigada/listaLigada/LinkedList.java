@@ -12,7 +12,6 @@ public class LinkedList {
         this.size=0;
     }
 
-
     public LinkedList(Element first, Element last, int size) {
         super();
         this.first = first;
@@ -76,9 +75,43 @@ public class LinkedList {
 
     }
 
-    public void remove(String newValue) {
+    public void remove(String SearchValue){
+        Element previus = null;
+        Element actual = this.first;
+        for(int i=0; i < this.getSize(); i++){
+            if (actual.getValue().equalsIgnoreCase(SearchValue)){
+                if (this.size == 1){
+                    this.first = null;
+                    this.last = null;
+                }else if (actual == first){
+                    this.first = actual.getNext();
+                    actual.setNext(null);
+                }else if (actual == last){
+                    this.last = previus;
+                    previus.setNext(null);
+                }else{
+                    previus.setNext(actual.getNext());
+                    actual = null;
+                }
+                this.size--;
+                break;
+            }
+            previus=actual;
+            actual=actual.getNext();
 
+        }
     }
+
+    public void printList(LinkedList list) {
+        for(int i=0 ; i<list.getSize(); i++ ) {
+
+            System.out.println(list.getElement(i).getValue());
+
+        }
+    }
+
+
+
 
     @Override
     public String toString() {

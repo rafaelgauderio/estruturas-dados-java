@@ -15,6 +15,8 @@ public class Program {
 
     public static void main(String[] args) {
 
+
+
         LinkedList list = new LinkedList();
 
         System.out.println("Size of the LinKedList: " + list.getSize());
@@ -26,13 +28,25 @@ public class Program {
         System.out.println("First element: " +list.getFirst().getValue());
         System.out.println("Last element: " +list.getLast().getValue());
 
-        System.out.println(list);
-
         list.add("Flamengo");
         list.add("Palmeiras");
+        list.add("Fluminense");
+        list.add("Curitiba");
         list.add("Cruzeiro");
 
-        System.out.println(list);
+        list.printList(list);
+
+        list.remove("Internacional");
+        list.remove("Flamengo");
+        list.remove("Cruzeiro");
+
+        System.out.println("\nlist aftter removind itens");
+        list.printList(list);
+
+
+
+
+
 
         System.out.println("\nElement in position three:  " + list.getElement(3));
 
