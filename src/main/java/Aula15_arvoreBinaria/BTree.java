@@ -1,5 +1,7 @@
 package Aula15_arvoreBinaria;
 
+import java.util.LinkedList;
+import java.util.Queue;
 
 //classe que representa a árvore
 public class BTree <T>{
@@ -114,6 +116,25 @@ public class BTree <T>{
         printPostOrder(number.getLeft());
         System.out.print(number.getValue() + ", ");
         printPostOrder(number.getRight());
+
+    }
+
+
+
+    public void printPesquisalargura () {
+        System.out.println("\nImprimindo Pesquisa em largura:");
+
+        Queue<BTNode<T>> fila = new LinkedList<>();
+        fila.add(root);
+        while (!fila.isEmpty()) {
+            BTNode<T> current = fila.remove();
+            if(current !=null) {
+                System.out.print(current.getValue()+", ");
+                fila.add(current.getLeft());
+                fila.add(current.getRight());
+            }
+        }
+        System.out.println();
 
     }
 

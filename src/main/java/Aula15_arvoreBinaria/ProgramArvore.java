@@ -38,6 +38,7 @@ public class ProgramArvore {
         arvoreBinaria.printPreOrder();
         arvoreBinaria.printInOrder();
         arvoreBinaria.printPostOrder();
+        arvoreBinaria.printPesquisalargura();
 
         //Realizando Buscas
         System.out.println(arvoreBinaria.contains("Rafael De Luca"));

@@ -1,6 +1,5 @@
 package Aula15_arvoreBinaria;
 
-import jdk.swing.interop.SwingInterOpUtils;
 
 public class ProgramConceitosArvores {
 
