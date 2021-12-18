@@ -1,10 +1,10 @@
 package Aula11_ListaDuplamenteLigada;
 
-public class ListaDupla {
+public class ListaDupla { //Lista duplamente encadeada
 
-    private No inicio;
-    private No fim;
-    private int tamanho;
+    private No inicio; //Ponteiro para o primeiro nó da lista
+    private No fim; //Ponteiro para o último nó da lista
+    private int tamanho; //quantidade de elementos da lista duplamente encadeada
 
     public No getInicio() {
         return inicio;

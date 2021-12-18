@@ -1,10 +1,10 @@
 package Aula11_ListaDuplamenteLigada;
 
-public class No {
+public class No { // Nó da lista duplamente encadeada
 
-    private String informacao;
-    private No proximo;
-    private No anterior;
+    private String informacao; //informação a ser amarzenada
+    private No proximo; //Ponteiro para o proximo nó
+    private No anterior; // Ponteiro para o nó anterior
 
     public String getInformacao() {
         return informacao;
